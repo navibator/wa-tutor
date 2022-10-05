@@ -1,0 +1,50 @@
+
+#page-bopomo { 
+  font-family: TPRegular;
+  text-align: center; 
+}
+#page-bopomo > * { margin: 0 auto; }
+#pyin-screen {
+  height: 80px;
+  border: 1px solid yellow;
+  background: beige;
+
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#pyin-screen > div:nth-child(1) { width: 100px; }
+#pyin-screen > div:nth-child(2) { width: 660px; }
+#pyin-bpm { color:red; font-size:20px; }
+#pyin-tyong { color:orange; font-size:24px; font-family: monospace; }
+#pyin-screen rt { font-size: 20px; color:navy; }
+#pyin-screen ruby { font-size: 20px; color:blue; } 
+
+#pyin-keyboard {   
+  display:block; 
+  position:relative;
+  height: 420px;
+  width: 760px;
+}
+
+[class^='btn-pyin'] {
+  position: absolute;
+  font-family: TPRegular;
+  color: yellow;
+  background-color: black;
+  border: 4px solid darkslategray;
+  border-radius: 50%;
+  line-height: 40px;
+}
+[class^='btn-pyin']:hover { border: 4px solid lightyellow; }
+.btn-pyin-disable { opacity:0.5; }
+.btn-pyin-clicked { background-color: slategray; font-size:40px; }
+.btn-pyin-useless { color: sienna; opacity:0.7; }
+@media only screen and (max-width: 900px) {
+  #pyin-screen, #pyin-keyboard { display:none; }
+}
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+}
+@media only screen and (min-width:1200px) {
+}

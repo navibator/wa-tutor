@@ -1,0 +1,42 @@
+body { background: snow;  margin: 10px; }
+.App * { user-select: none; margin:  0px; }
+
+#navi-bar       { height: 50px; }
+#jumbotron      { height: 80px; }
+#contents       { background: floralwhite; }
+#navi-bar h4    { display: inline-block; }
+#user-email,
+#btn-login {
+    display: inline-block; 
+    margin: 10px; 
+    float: right; 
+}
+.container  { margin: 0 auto; } /* only for book mode to align middle*/
+
+@media only screen and (max-width: 900px) {
+    #navi-bar     { background: pink; } 
+    #jumbotron    { background: lavenderblush; }
+    .container    { width: 400px; }
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    #navi-bar     { background: palegreen; } 
+    #jumbotron    { background: honeydew; }
+    .container    { width: 800px; }
+}
+@media only screen and (min-width: 1200px) {
+    #navi-bar     { background: lightblue; } 
+    #jumbotron    { background: lightcyan; }
+    .container    { width: 1100px; }
+}
+@font-face {
+    font-family: TPLight;
+    src: url('./fonts/TaipeiSansTCBeta-Light.ttf');
+}
+@font-face {
+    font-family: TPRegular;
+    src: url('./fonts/TaipeiSansTCBeta-Regular.ttf');
+}
+@font-face {
+    font-family: TPBold;
+    src: url('./fonts/TaipeiSansTCBeta-Bold.ttf');
+}

@@ -1,0 +1,84 @@
+
+#page-about { text-align: center; }
+#bopomo-table, #sticky-note, #bopomo-history {
+  vertical-align:top; top:0;
+  display: inline-block; 
+  margin: 0 auto;
+}
+#bopomo-table {
+  position: relative;
+  background-image: url('./about-background.png');
+  background-size: cover;
+  height: 460px;
+}
+#memo1, #memo2, #memo3 {
+  float: right;
+  font-family: TPRegular;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 5px;
+  text-align: left;
+}
+#memo1 { position:absolute; width:180px; color:white; 
+  border: 1px solid lightgray;
+  background-color:#F005; 
+  border-radius:20%;  }
+#memo2 { height:94%; overflow-y:auto; padding: 10px 10px; }
+#memo2 > div { margin:1px; padding:3px; background-color:#4483; border-radius:8px; }
+
+[class^='btn-bpm'] {
+  position: absolute;
+  font-family: TPRegular;
+  color: yellow;
+  background-color: steelblue;
+  border: 4px solid pink;
+  border-radius: 50%;
+  line-height: 40px;
+}
+.btn-bpm-normal:hover { border: 4px solid lightcoral; }
+.btn-bpm-clicked {
+  font-size: 40px;
+  transition: .3s linear;
+}
+#bopomo-history {
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 4px;
+}
+#info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+
+@media only screen and (max-width: 900px) {
+  #bopomo-history { 
+    display: block;
+    width: 90%;
+  }
+  #bopomo-table, #memo1, #memo2, #memo3 { display:none; }
+}
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+  #bopomo-history, #bopomo-table { 
+    display: block; 
+    width: 90%;
+  }
+  #memo2 { display:inline-block; width:20%; }
+  #memo3 { display:none; }
+}
+@media only screen and (min-width:1200px) {
+  #bopomo-history, #bopomo-table { 
+    display: block; 
+    width: 1080px;
+  }
+  #memo2 { width: 160px; }
+  #memo3 { width:80px; background-color:#0A03; border:2px solid yellowgreen; }
+}
+
+
+/* width, Track, Handle and Hover Effect */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { box-shadow: inset 0 0 5px #828; border-radius: 10px; }
+::-webkit-scrollbar-thumb { background:#A4A4; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background:#A4Aa; }

@@ -1,0 +1,18 @@
+
+#page-challenge { text-align: center; padding: 10px; }
+#poem-content { display: inline-block; left: 50%; }
+.poem-column {
+  display: inline-block;
+  float: right;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .poem-column { width: 50px; font-family: TPLight; }
+}
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+  .poem-column { width: 70px; font-family: TPRegular; }
+}
+@media only screen and (min-width:1200px) {
+  .poem-column { width: 90px; font-family: TPBold; }
+}

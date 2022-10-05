@@ -1,0 +1,57 @@
+h2 {
+  color: #a7a3a4;
+  margin-left: 80px;
+}
+[drop-zone] {
+  height: 126px;
+  width:  168px;
+  margin: 5px;
+  background-color: gray;
+  border: 1px dashed #f00; 
+  float: left;
+}
+.drag-over {	border: 1px dashed #0f0; }
+.box {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border: 1px solid pink;
+}
+.boxInDragging {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border: 1px solid yellow;  
+}
+#dnd-frame {
+  border: 1px solid blue;
+  display: inline-block;
+}
+.dnd-pos   { position:absolute; display:block; width:100px;  height:20px; top:40px; left:200px; border:1px solid orange;}
+.ta-init {
+  color: rgba(255,0,0,1);
+}
+.ta {
+  transition: color 1.5s;
+  color: rgba(0,0,0,1);
+}
+#zone-tip {
+  position:   absolute;
+  padding:    2px;
+  display:    none;
+  color:      white;
+  background: rgba(60,120,200,0.6);
+  border:     2px solid rgb(60,70,140);
+}
+
+
+@media only screen and (max-width: 900px) {
+  #tag-Dragger {
+    display: none;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+
+}
+@media only screen and (min-width:1200px) {
+}
