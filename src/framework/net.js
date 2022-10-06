@@ -3,7 +3,8 @@ import axios from 'axios'
 var CENT_TOKEN='Waiting for login ...'
 
 const auth_http = process.env.BE_AUTH_HTTP || 'http://localhost:9090'
-const monk_http = process.env.BE_MONK_HTTP || 'http://localhost:8080'
+//const monk_http = process.env.BE_MONK_HTTP || 'http://localhost:8080'
+const monk_http = 'https://be-monk.herokuapp.com'
 const uac_logout= ()=>{ CENT_TOKEN = 'Waiting for login ...' }
 const uac_login = (email, password, fCompleted)=>{
   axios({ method: 'post',
